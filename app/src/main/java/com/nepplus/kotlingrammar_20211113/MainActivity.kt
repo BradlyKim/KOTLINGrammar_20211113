@@ -81,7 +81,7 @@ class MainActivity : AppCompatActivity() {
 //            A회사 조건
             val companyASalary = 3000
             val companyADistance = 50
-            val companyAWorkEasy = true
+            val companyAOffEarly = true
 
 //            1번 구직자는 취업 의사?
 //            조건 : 연봉 4천 이상이면 OK
@@ -91,7 +91,7 @@ class MainActivity : AppCompatActivity() {
 
 //            2번 구직자는 취업 의사?
 //            조건 : 이동시간 30분 이내 or 빨리 퇴근 OK
-            val person02OK = (companyADistance <= 30) || companyAWorkEasy
+            val person02OK = (companyADistance <= 30) || companyAOffEarly
 
 //            boolean 변수 "== true" 는 할 필요가 없는 질문
 //            boolean 변수 안에 있는 값을 그대로 꺼내 쓰면 == true 와 항상 같은 결과
@@ -101,7 +101,7 @@ class MainActivity : AppCompatActivity() {
             //            3번 구직자는 취업 의사?
 //            조건 : 빨리 퇴근 안 하는 회사 -> Not 연산
 
-            val person03OK = !companyAWorkEasy
+            val person03OK = !companyAOffEarly
 
 
             Log.d("조건문02", person03OK.toString())
