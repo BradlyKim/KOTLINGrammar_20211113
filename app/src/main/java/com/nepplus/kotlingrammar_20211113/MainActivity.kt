@@ -42,5 +42,35 @@ class MainActivity : AppCompatActivity() {
 
             Log.d("변수연습02", myName)
         }
+
+        btnCondition01.setOnClickListener {
+//            조건문 01 버튼 눌리면 실행될 코드
+
+            val userAge = 10
+
+//            나이가 20살 이상인가? -> 로그로 "성인입니다." 문장 출력
+
+            if(userAge >= 20){
+
+                Log.d("조건문01", "성인입니다.")
+            }
+
+            else if (userAge >= 17) {
+//                성인이 아리고, 질문 -> 17살 이상인가?
+                Log.d("조건문01", "고등학생입니다.")
+
+            }
+
+            else if (userAge >= 14) {
+//                성인이 아니고, 고등학생도 아닐때 질문
+                Log.d("조건문01", "중학생입니다.")
+            }
+
+            else {
+                Log.d("조건문01", "초등학생이거나, 미취학 아동입니다. ")
+            }
+
+
+        }
     }
 }
